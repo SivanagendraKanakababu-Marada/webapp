@@ -37,7 +37,7 @@ router.patch('*', (req, res) => { res.status(400);
 
 
 app.use('/v2/user', require('./controller/controller'));
- app.use('/v1/product', require('./controller/productController'));
-app.use('/v1', require('./controller/imageController'));
+ app.use('/v2/product', require('./controller/productController'));
+app.use('/v2', require('./controller/imageController'));
 app.use('/', router);
 module.exports = app;
